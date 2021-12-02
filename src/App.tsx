@@ -1,6 +1,7 @@
 import "./App.css";
 import Greet from "./components/Greet";
 import PersonList from "./components/PersonList";
+import Status from "./components/Status";
 
 function App() {
   const namelist = [
@@ -21,6 +22,7 @@ function App() {
     <div className="App">
       <Greet name="Gangadhar" messageCount={22} />
       <PersonList nameList={namelist} />
+      <Status status="loading" />
     </div>
   );
 }
